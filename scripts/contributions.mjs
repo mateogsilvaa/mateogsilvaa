@@ -15,8 +15,8 @@ const days = [...html.matchAll(/<td[^>]*data-date="([\d-]+)"[^>]*>/g)]
 if (!total || total === '0' || days.length < 300) throw new Error('No contribution data: images left as they were');
 
 const THEMES = {
-  light: { text: '#1f2328', muted: '#59636e', levels: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'] },
-  dark: { text: '#f0f6fc', muted: '#9198a1', levels: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'] },
+  light: { text: '#1f2328', muted: '#59636e', levels: ['#e9e7e1', '#b9c2ff', '#7f8fff', '#5468ff', '#2b45ff'] },
+  dark: { text: '#f0f6fc', muted: '#9198a1', levels: ['#1b1f27', '#1b2668', '#2436b0', '#2b45ff', '#8b9aff'] },
 };
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const STEP = 15, LEFT = 36, TOP = 62;
